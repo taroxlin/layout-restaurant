@@ -1,0 +1,664 @@
+* {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1600px;
+    max-width: 1600px;
+    margin: auto;
+}
+/* Multiple Sections */
+
+
+.article-title {
+    font-size: 3.6rem;
+    text-align: center;
+    font-family: "Yeseva One";
+    font-weight: 400;
+    height: 48px;
+    overflow: hidden;
+}
+
+.article-paragraph {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 24px;
+    font-family: "Lato";
+    font-weight: 600;
+    max-height: 190px;
+    overflow: auto;
+}
+
+
+.divider-size {
+    margin: 15px Calc(50% - 125px);
+    width: 247px;
+    height: 24px;
+}
+.icon-hover{
+    transition: color 1s linear;
+}
+.icon-hover:hover{
+    color:orangered;
+}
+/* Header Content*/
+
+header {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    height: 80px;
+    left: Calc(50% - 550px);
+}
+
+.main-logo {
+    flex: 1.5;
+    align-self: stretch;
+    margin: auto;
+}
+
+.head-link {
+    flex: 1 0 110px;
+    text-align: center;
+    max-width: 110px;
+}
+
+.main-menu-navi {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 70px;
+    overflow: hidden;
+
+}
+
+.main-menu-flex-item {
+    font-family: "Gentium Book Basic" sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+
+
+.main-menu-navi a {
+    text-decoration: none;
+    color: white;
+    border-top: 5px solid transparent;
+}
+
+.main-menu-navi a:hover {
+    border-top: 5px solid white;
+}
+
+.main-menu-media {
+    flex: 1;
+    margin: auto;
+    height: 22px;
+    overflow: hidden;
+}
+
+.fa-twitter,
+.fa-youtube,
+.fa-facebook-f {
+    color: rgb(255, 236, 60);
+    font-size: 2rem;
+    margin-left: 30px;
+
+}
+
+
+/* Main Content*/
+
+.home-section,
+.igred-section,
+.reviews-section {
+    width: 1600px;
+    min-height: 700px;
+}
+
+
+/* Home section */
+
+.home-section {
+    z-index: 2;
+    background: url("../images/bg1.png");
+    display: grid;
+    grid-template-areas: "h1 h1 h1 h1" "divider divider divider divider" "bookTableButton bookTableButton seeMenuButton seeMenuButton";
+    grid-template-columns: repeat(4, 15%);
+    grid-template-rows: 200px 50px 50px;
+    justify-content: center;
+    grid-gap: 30px;
+    padding-top: 15%;
+}
+
+.divider-main {
+    width: 232px;
+    height: 43px;
+    margin: 0 Calc(50% - 116px);
+    grid-area: divider;
+}
+
+.home-title {
+    grid-area: h1;
+    background-color: transparent;
+    justify-self: center;
+    margin: auto;
+    font-size: 9rem;
+    color: white;
+    text-align: center;
+    font-family: "Yeseva One";
+    font-weight: 400;
+    height: 220px;
+    overflow: hidden;
+}
+
+.booktable-button {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    grid-area: bookTableButton;
+    justify-self: right;
+}
+.booktable-button:hover{
+    background: rgba(0, 0, 0, 0.9)
+}
+
+.menu-button  {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid white;
+    grid-area: seeMenuButton;
+    justify-self: left;
+
+}
+.menu-button:hover{
+    background: rgba(255, 255, 255, 0.4)
+}
+
+.booktable-button,
+.menu-button  {
+    color: rgb(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 1.8rem;
+    overflow: hidden;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 1s linear;
+}
+
+
+
+
+/* About Section */
+
+.about-section {
+    background: url(../images/pattern.png);
+    background-image: linear-gradient( -43deg, rgba(1, 1, 1, 0.1) 0%, rgba(255, 255, 255, 0.09) 100%);
+    box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.24);
+    display: grid;
+    grid-template-areas: "article dish";
+    grid-template-columns: 450px 600px;
+    grid-template-rows: 600px;
+    justify-content: space-around;
+    padding: 5% 10%;
+}
+
+.about-section p {
+    color: rgb(100, 100, 100);
+}
+
+.about-grid {
+    grid-area: article;
+
+
+}
+
+.about-grid h4 {
+    color: rgba(255, 145, 0, 0.76);
+    margin: 2.5%;
+}
+
+
+.img-cook {
+    display: block;
+    padding-top: 30px;
+    margin-left: 50%;
+    transform: translateX(-30%);
+}
+
+.img-dish {
+    grid-area: dish;
+    background: url("../images/dish.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* Ingrediens Section*/
+
+.igred-section {
+    background: url("../images/bg2.png");
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: 600px;
+    grid-template-areas: "freeplace ingreds";
+    justify-content: center;
+    padding: 78px 0;
+}
+
+.ingred-img-container {
+    width: 80%;
+    display: flex;
+    margin: 80px auto;
+    flex: 1 0 33%;
+    justify-content: space-evenly;
+}
+
+.ingred-img-container img {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255, 0.1);
+}
+
+.ingred-article-style {
+    width: 600px;
+    grid-area: ingreds;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 3px solid rgba(0, 0, 0, 0.32);
+    overflow: hidden;
+}
+
+.ingred-article-style p {
+    width: 75%;
+    margin: auto;
+}
+
+.ingred-article-style h4 {
+    margin-bottom: 20px;
+}
+
+.ingred-article-style h4,
+.ingred-article-style p {
+    color: white;
+}
+
+
+/* Menu Section*/
+
+.menu-section {
+    background: radial-gradient( ellipse at 0px 0px, rgb(255, 255, 255, 0.3) 0%, rgb(100, 100, 100, 0.3) 20%, rgb(255, 255, 255, 0.3) 40%, rgb(100, 100, 100, 0.3) 60%, rgb(255, 255, 255, 0.3) 80%, rgb(100, 100, 100, 0.3) 100%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.flex-container {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    width: 1280px;
+    margin: auto;
+}
+
+.menu-meal-container {
+    margin: 10px 0;
+    width: 485px;
+}
+
+.menu-meal-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 70px;
+}
+
+.menu-meal-section h3 {
+    font-size: 3.6rem;
+    color: #cc9900;
+    text-align: center;
+    font-family: "Yeseva One";
+    font-weight: 700;
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+.special-dish::before {
+    position: absolute;
+    content: "SPECIAL";
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), url(../images/specialbg.jpg);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-align: center;
+    width: 80px;
+    height: 20px;
+    margin-top: -20px;
+    margin-left: Calc(484.5px - 80.5px);
+    color: white;
+}
+
+.special-dish {
+    border: 1px solid rgb(223, 171, 59, 0.6);
+}
+
+.meal-title {
+    flex-grow: 3;
+}
+
+.meal-price {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.meal-price,
+.meal-title {
+    margin: 10px 0 10px 0;
+    height: 28px;
+    font-size: 2.1rem;
+    color: gold;
+    font-family: "Yeseva One";
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.menu-meal-desc {
+    font-size: 2.1rem;
+    margin: 10px 20px;
+    font-family: "Lato - Regular";
+    font-weight: 500;
+}
+
+.meal-name-cost {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+    justify-content: stretch;
+    border-bottom: 1px dotted rgba(255, 145, 0, 0.56);
+}
+
+
+/* Guest Rev Section*/
+
+.reviews-section {
+    background: url("../images/bg.png");
+    justify-content: center;
+    display: grid;
+}
+
+.guest-article-container {
+    margin: auto;
+    padding: 50px 110px;
+    color: white;
+    height: 550px;
+    border: 3px solid rgba(0, 0, 0, 0.32);
+    width: 750px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.guest-article-container h4 {
+    margin: 0;
+    font-family: "Yeseva One";
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+.quoted::before {
+    content: "“";
+    font-size: 8rem;
+    position: absolute;
+    margin-left: -50px;
+}
+
+.quote-author {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.9rem;
+    color: rgba(200, 200, 200, 1);
+}
+
+.quoted {
+    margin: 0;
+    font-family: "Gentium Book Basic - Bold";
+    font-weight: 700;
+    line-height: 45px;
+    font-size: 2.5rem;
+    word-spacing: 3px;
+    opacity: 0.8;
+    height: 270px;
+    overflow: hidden;
+}
+
+
+/* reservation section*/
+
+.reserv-section {
+    display: grid;
+    grid-template-areas: "horzFoto1 horzFoto2 space article article" "horzFoto1 horzFoto2 space form form";
+    grid-template-columns: repeat(2, 250px) 100px repeat(2, 250px);
+    grid-template-rows: 275px 240px;
+    grid-column-gap: 30px;
+    justify-content: center;
+    padding: 50px 150px;
+    background: repeating-radial-gradient( circle at 0% 50%, rgb(255, 255, 255, 0.1) 0px, rgb(255, 255, 255, 0.1) 20px, rgb(100, 100, 100, 0.02) 20px, rgb(100, 100, 100, 0.03) 40px);
+}
+
+.reservation-article h4 {
+    margin: 0;
+    color: gold;
+}
+
+.hz-foto-left {
+    grid-area: horzFoto1;
+    height: 100%;
+    width: 100%;
+}
+
+.hz-foto-right {
+    height: 100%;
+    width: 100%;
+    grid-area: horzFoto2;
+}
+
+.reservation-form-Style {
+    grid-area: form;
+    display: grid;
+    grid-template-areas: "formN formE" "formDate formAmount" "button button";
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: 70px 70px 50px;
+    justify-content: center;
+    grid-column-gap: 8%;
+    margin-top: 15px;
+    grid-row-gap: 25px;
+}
+
+.reservation-article {
+    grid-area: article;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 90%;
+}
+
+.reservation-form-Style legend {
+    font-size: 2rem;
+    color: gold;
+    line-height: 35px;
+}
+
+.reserv-paragraph {
+    text-align: center;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 22px;
+    height: 200px;
+    overflow: auto;
+    margin: 0;
+}
+
+.nameForm {
+    grid-area: formN;
+}
+
+.emailForm {
+    grid-area: formE;
+}
+
+.dateForm {
+    grid-area: formDate;
+}
+
+.amountForm {
+    grid-area: formAmount;
+}
+
+.form-input {
+    width: 100%;
+    box-sizing: content-box;
+    font-size: 1.7rem;
+    font-family: "yeseva ona";
+    font-weight: 600;
+    height: 36px;
+}
+
+.form-input:focus {
+    border: 2px solid gold;
+    z-index: 4;
+    outline: none;
+}
+
+.form-input::placeholder,
+select {
+    color: gray;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.buttonForm {
+    grid-area: button;
+    width: 200px;
+    height: 36px;
+    justify-self: center;
+    background-color: rgba(223, 173, 50, 1);
+    border: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    opacity: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/calendar-16.png) center/80% no-repeat;
+    color: rgba(0, 0, 0, 0);
+    opacity: 0.5;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/calendar-16.png) center/80% no-repeat;
+    opacity: 0.8;
+}
+
+.form-input:valid {
+    color: black;
+}
+
+option {
+    width: 100%;
+    box-sizing: content-box;
+    font-size: 1.8rem;
+    font-family: "yeseva ona";
+    font-weight: 400;
+    height: 40px;
+    color: black;
+    outline: none;
+}
+
+
+/* Footer Content */
+
+footer {
+    bottom: 1%;
+    width: 1600px;
+    height: 330px;
+    background-color: rgba(15, 15, 15, 1);
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.footer-section article {
+    width: 25%;
+    line-height: 24px;
+}
+
+.footer-section h3 {
+    font-size: 2.1rem;
+    font-family: "Yeseva One";
+    font-weight: 400;
+    text-align: center;
+    line-height: 24px;
+}
+.footer-about p{
+max-height: 150px;
+overflow: hidden;
+}
+
+.footer-ophours p, .footer-location p{
+    max-height: 100px;
+    overflow: hidden;
+
+}
+.footer-section p {
+    font-family: "Open Sans" sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 24px;
+}
+
+.footer-section strong {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.divider-footer {
+    width: 200px;
+    height: 20px;
+    margin: 0 Calc(50% - 100px);
+}
+
+.media-box {
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    width: 40%;
+    margin: 20px auto;
+}
+
+footer .fa,
+footer .fab,
+footer .far {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    margin: 0;
+}
