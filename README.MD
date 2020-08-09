@@ -7,30 +7,6 @@ Create web page, strictly according to:
 
 **[Lambda restaurant layout](https://www.dropbox.com/s/xvhx2kxlvzxu5n0/Restaurant_2.psd?dl=0)**
 
-## How to submit
-
-Implemented layout (files/folders with the content) have to be pushed to *the markup-1* branch of **your repository**. Create a pull request and set your mentor as a reviewer.
-
-```
-*GitHub: go to your RS **private** repository. You can find one here - https://github.com/rolling-scopes-school/
-*GitHub: fetch the repository to your machine(git clone or download)
-*On your machine: open the repository with CMD and create a new branch **markup-1** (git checkout -b markup-1)
-*On your machine: place your files and folders in this directory
-*On your machine: create a commit then push the files to the **markup-1** branch (git add .) --> (git commit -m 'commit name') --> (git push origin markup-1)
-*GitHub: create a pull request ('new pull request' button)
-*GitHub: pick a master branch as a target branch (master <-- markup-1), set your mentor as a reviewer( click the **reviewers** label in the right corner and pick your mentor from the list)
-*Github: click the **pull request** button
-*Summary: in a nutshell, we suggest to create a PR from markup-1 brunch to the master brunch, and set our mentor as a **reviewer**. **Do not merge until it has been approved by a mentor**.
-```
-
-## Success criteria
-
-**100** - the maximum amount of points you can get for implementing this task
-
-!Points - **0-10** means that if none of the criteria are met, the student gets **0** points, otherwise if everything is implemented correctly - **10** points; for the partial implementation of the feature the number of points are set at mentor's discretion.
-
-Points can be cut down in case of mistakes (described in the technical requirements)
-
 ## Technical Requirements
 
 1. General:
